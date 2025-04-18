@@ -25,7 +25,7 @@ export default function OrdersPage() {
                         />
                     ))}
                 </div>
-            ) : <p className="text-center my-10">No hay ordenes listas</p>}
+            ) : <p className="text-center my-10">No hay ordenes listas...</p>}
         </>
     )
 }
