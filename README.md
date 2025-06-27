@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧾 Digital Kiosk – Food Ordering Demo
 
-## Getting Started
+This is a demo web application that simulates the workflow of a restaurant or café kitchen. It includes a customer ordering view, an admin panel to manage products and orders, and a public screen to display ready-to-pick-up orders.
 
-First, run the development server:
+> ⚠️ This is a **demo project** and does **not include authentication**. The views are separated by URL — there's no user/session control between them.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Technologies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** Zustand
+- **ORM / Database:** Prisma + PostgreSQL
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔗 Live Demo Links
 
-To learn more about Next.js, take a look at the following resources:
+- 🛒 **Customer View – Place Orders**  
+  [https://quiosco-next-app-router-three-sigma.vercel.app/](https://quiosco-next-app-router-three-sigma.vercel.app/)  
+  _Main screen for customers to browse products, add items to the cart, and place an order._
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🧑‍🍳 **Admin Panel – Manage Products and Orders**  
+  [https://quiosco-next-app-router-three-sigma.vercel.app/admin/orders](https://quiosco-next-app-router-three-sigma.vercel.app/admin/orders)  
+  _Used by kitchen/admin staff to manage product inventory and track active orders._
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 📦 **Ready Orders – Pick-Up Screen**  
+  [https://quiosco-next-app-router-three-sigma.vercel.app/orders](https://quiosco-next-app-router-three-sigma.vercel.app/orders)  
+  _Displays all orders marked as "Ready to Pick Up" by the admin._
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧪 Main Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Product browsing and cart system  
+- Order placement and real-time status updates  
+- Admin panel for:
+  - Creating, editing, and deleting products (CRUD)
+  - Viewing and updating order status
+- Public screen for displaying ready-to-pick-up orders
+- Zustand store for state management
+- Data persistence with PostgreSQL via Prisma ORM
+
